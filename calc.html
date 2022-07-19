@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./calc.css">
+    <script src="./calc.js"></script>
+</head>
+
+<body>
+    <div>
+        <header id="screen">
+
+        </header>
+        <table>
+            <tr class="operations">
+                <td onclick="clearScr()">AC</td>
+                <td onclick="pushSymbol('*0.01')">%</td>
+                <td onclick="pushSymbol('/')">/</td>
+            </tr>
+            <tr class="operations">
+                <td onclick="pushSymbol('+')">+</td>
+                <td onclick="pushSymbol('-')">-</td>
+                <td onclick="pushSymbol('*')">x</td>
+            </tr>
+            <tr>
+                <td onclick="pushSymbol('1')">1</td>
+                <td onclick="pushSymbol('2')">2</td>
+                <td onclick="pushSymbol('3')">3</td>
+            </tr>
+            <tr>
+                <td onclick="pushSymbol('4')">4</td>
+                <td onclick="pushSymbol('5')">5</td>
+                <td onclick="pushSymbol('6')">6</td>
+            </tr>
+            <tr>
+                <td onclick="pushSymbol('7')">7</td>
+                <td onclick="pushSymbol('8')">8</td>
+                <td onclick="pushSymbol('9')">9</td>
+            </tr>
+            <tr>
+                <td onclick="pushSymbol('.')">.</td>
+                <td onclick="pushSymbol('0')">0</td>
+                <td id="equalButton" onclick="getAnswer()">=</td>
+            </tr>
+
+        </table>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+div{
+    background-color: #000000;		
+	border-radius: 0.5em;
+    width:18rem;
+}
+
+#screen{
+    background-color: #225a82;
+    margin: 0 auto;	
+    font-size: xx-large;
+    color:#EEEBD0;
+    text-align: center;
+    min-height:2em;
+    width:15rem;
+}
+table{
+	margin: 0 auto;
+    padding: 0.5em;
+}
+tr{
+    margin-bottom: 0.5em;
+}
+td{
+    background-color: #5F696D;
+    padding: 0.5em;
+    color: #EEEBD0;
+    text-align: center;
+    font-size: xx-large;
+
+}
+.operations td{
+    background-color: #E94F37;
+    padding: 0.5em;
+    margin: 0.5em;
+    color: #000000;
+    text-align: center;
+    font-size: xx-large;
+}
+#equalButton{
+    background-color: #91DEA8;
+    color: #000000;
+}
+td:active{
+    background-color: #EEEBD0;
+    color: #000000;
+}
