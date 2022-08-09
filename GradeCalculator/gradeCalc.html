@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./gradeCalc.css">
+    <script src="./gradeCalc.js"></script>
+    <title>Grade Calculator</title>
+</head>
+<body>
+    <h1>Grade Calculator</h1>
+    <p>Enter a student's marks in English, Math and Science to find out their grade</p>
+
+    <div>
+        <label for="english">English: </label>
+        <input type="text" id="english" class="marksFeild" placeholder="Enter marks out of 100">
+        <label for="math">Math: </label>
+        <input type="text" id="math" class="marksFeild" placeholder="Enter marks out of 100">
+        <label for="science">Science: </label>
+        <input type="text" id="science" class="marksFeild" placeholder="Enter marks out of 100">
+        <input type="submit" value="Submit Marks" class="submitMarks" onclick="calculateGrade()">
+    </div>
+
+    <div>
+        <label for="gradeResult">Grade : </label>
+        <input type="text" id="gradeResult" disabled>
+        <p class="remarks"></p>
+    </div>
+
+
+</body>
+</html>

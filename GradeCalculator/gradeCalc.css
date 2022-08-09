@@ -1,0 +1,21 @@
+html{
+    font-family: sans-serif;
+}
+body{
+    width: 50%;
+    max-width: 800px;
+    min-width: 480px;
+    margin: 0 auto;
+}
+.remarks{
+    color: green;
+}
+.marksFeild{
+    display: block;
+    margin: 1%;
+}
+.submitMarks{
+    display: block;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}

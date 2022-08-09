@@ -1,0 +1,28 @@
+html{
+    font-family: sans-serif;
+}
+body{
+    width: 50%;
+    max-width: 800px;
+    min-width: 480px;
+    margin: 0 auto;
+}
+table,
+th,
+td {
+    border: 1px solid;
+}
+th,
+td {
+    padding: 5px 10px;
+    border-top-width: 0;
+    border-left-width: 0;
+}
+.entryFeild{
+    display: block;
+    margin: 1%;
+    margin-bottom: 2%;
+}
+.submit{
+    margin-top: 3%;
+}
