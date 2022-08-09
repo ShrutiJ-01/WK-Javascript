@@ -1,4 +1,4 @@
-//Exploring Arrays in js
+//Exploring Arrays in js, also map, filter and split()
 
 //Creating an array 
 let shopping=["Milk","Juice","Almonds","Oatmeal","Banana","Wheat Flour"];
@@ -37,3 +37,29 @@ console.log("Modified array from splice() after adding cheese after 3rd index fr
 //Using concat() to merge numbers and shopping
 let merged_array=shopping.concat(numbers);
 console.log("Concatenated array is : ", merged_array);
+
+//Using map() to get an array of lengths of list Items
+const lengthArray = shopping.map((item)=>item.length);
+console.log('length of each item in the shopping list : ',lengthArray);
+
+//get an array of only those items which have length<6 using filter(). 
+let essentials = shopping.filter((item)=>item.length<6);
+console.log('items with length less than 8 characters : ',essentials);
+
+//Converting strings to arrays using split()
+const data = 'Manchester,London,Liverpool,Birmingham,Leeds,Carlisle';
+const cities = data.split(',');
+console.log(cities, ' is an array resulting from using split() on ',data);
+
+//Converting arrays to strings using join() or toString()
+const commaSeparated = cities.join(',');
+const dogNames = ['Rocket','Flash','Bella','Slugger'];
+let conversion= dogNames.toString(); // Rocket,Flash,Bella,Slugger
+
+console.log(commaSeparated,' is a conversion of an array to a string using join()');
+console.log('Converting ',dogNames,' aaray to strinf using toString() \n result is : ',conversion);
+
+//Reduce all the elemnts of array to a single peice of data/ element
+//arguments given to reduce function are a function and initial value of acuumulator
+const sum=numbers.reduce((accumulator,currentValue)=>{return accumulator+currentValue;},0);
+console.log('sum of numbers ',numbers,' is : ',sum);
