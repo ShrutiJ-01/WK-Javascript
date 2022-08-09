@@ -1,6 +1,6 @@
-//Callback
-//Javascript is a single threaded language.
-//One statement is being executed at a time.
+//Asynchronous javascript practice 
+// using placheolder api https://jsonplaceholder.typicode.com/todos/
+
 
 console.log(1);
 console.log(2);
@@ -21,9 +21,6 @@ console.log(6);
 //HTTP Requests
 
 //ready status 4 = complete, 3= in prgress, 2= sent, 1 = opened(i.e set up)
-//status codes are important because a complete request may have no reponse/error.
-
-//Tidying up code
 
 const getTodos = (callback) => {
     //Make a request Object
@@ -54,10 +51,6 @@ getTodos((err, data) => {
         console.log(data);
     }
 });
-
-
-//making requests in order. I.e making another request only after the first is completed.
-//DONOT nest callbacks at all. Its the DOOM. This is where promises come into picture
 
 //PROMISES
 //dummy example
@@ -106,11 +99,7 @@ getUserActivity('https://jsonplaceholder.typicode.com/posts/5').then(data => {
     console.log(err);
 });
 
-//FETCH API : easyway to make http requests
-//the fetch function returns a promise, so use then() to
-//execute callback on sucess
-//json method is asynchronous in itself and returns a promise in itself
-//so usko b then() lagan padta
+//FETCH API
 
 fetch('https://jsonplaceholder.typicode.com/posts/6').then((response) => {
     console.log('fetch method\'s then callback executed');
@@ -122,12 +111,6 @@ fetch('https://jsonplaceholder.typicode.com/posts/6').then((response) => {
 
 
 //ASYNC AND AWAIT 
-//YEYYYY FINALLYYYYYY
-//all async pfunctions returns proomise
-//so youllhave to use then() with it 
-//if you dont want that kachra again just use await keywiord
-
-//very similar to dart
 //use then and catch when calling said async function
 const getUsers = async () => {
     const response = await fetch('https://jsonplaceholder.typicode.com/users/');
