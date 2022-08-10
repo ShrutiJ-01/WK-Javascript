@@ -1,7 +1,6 @@
 //Asynchronous javascript practice 
 // using placheolder api https://jsonplaceholder.typicode.com/todos/
 
-
 console.log(1);
 console.log(2);
 console.log(3);

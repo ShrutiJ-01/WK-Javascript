@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./registerPatient.css">
+    <script src='./registerPatient.js'></script>
+    <title>Register Patient</title>
+</head>
+<body>
+    <h1>Register new patients</h1>
+    <div>
+        <label for="firstNameFeild">Enter first name : </label>
+        <input type="text" id="firstNameFeild" placeholder="First Name" class="entryFeild">
+        <label for="lastNameFeild">Enter last name : </label>
+        <input type="text" id="lastNameFeild" placeholder="Last Name" class="entryFeild">
+        <label for="genderField">Enter gender : </label>
+        <input type="text" id="genderField" placeholder="Gender" class="entryFeild">
+        <label for="ageField">Enter age : </label>
+        <input type="number" id="ageField" placeholder="Age" class="entryFeild">
+        <input type="submit" value="Submit ID" onclick="registerPatient()" class="submit">
+        <p class="error" style="color: red;"></p>
+    </div>
+
+    <h3>Registered Patients</h3>
+    <div>
+        <table id="registeredPatientsTable" >
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Gender</th>
+                    <th>Age</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+
+            </tbody>
+        </table>
+    </div>    
+</body>
+</html>
